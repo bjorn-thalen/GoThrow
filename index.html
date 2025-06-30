@@ -18,9 +18,16 @@
       padding: 2em 1em;
       text-align: center;
     }
-    header img.logo {
-      height: 120px;
+    header .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2em;
+      flex-wrap: wrap;
       margin-bottom: 1em;
+    }
+    header img.logo {
+      height: 100px;
     }
     main {
       max-width: 800px;
@@ -35,7 +42,11 @@
     .hero-img {
       width: 100%;
       border-radius: 10px;
-      margin-bottom: 1.5em;
+      margin-top: 2em;
+      max-width: 400px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
     .cta {
       text-align: center;
@@ -59,14 +70,15 @@
 </head>
 <body>
   <header>
-    <img src="gothrow.jpg" alt="GoThrow 2026 Logo" class="logo" />
+    <div class="logo-container">
+      <img src="gothrow.jpg" alt="GoThrow 2026 Logo" class="logo" />
+      <img src="labamba.png" alt="La Bamba Logo" class="logo" />
+    </div>
     <h1>GoThrow 2026</h1>
     <p>January 17–18, 2026 · Lundbystrandshallen · Gothenburg, Sweden</p>
   </header>
 
   <main>
-    <img src="simonthrowing.jpg" alt="Ultimate Frisbee" class="hero-img" />
-
     <section>
       <h2>Welcome to Sweden's Premier Indoor Mixed Tournament</h2>
       <p>
@@ -95,6 +107,8 @@
       <p>Email us at <a href="mailto:gothrowfrisbee@gmail.com">gothrowfrisbee@gmail.com</a></p>
       <p>Or follow us on Facebook & Instagram</p>
     </section>
+
+    <img src="simonthrowing.jpg" alt="Ultimate Frisbee Action" class="hero-img" />
   </main>
 
   <footer>
